@@ -4,11 +4,11 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Moose Codes Blog</title>
-	<link href="http://musabdullah0.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://musabdullah0.github.io/blog"/>
+	<title>Moose Codes Projects</title>
+	<link href="http://musabdullah0.github.io/projects/atom.xml" rel="self"/>
+	<link href="http://musabdullah0.github.io/projects"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://musabdullah0.github.io/blog</id>
+	<id>http://musabdullah0.github.io/projects</id>
 	<author>
 		<name>Musab Abdulllah</name>
 		<email>musababdullah6231@gmail.com</email>
