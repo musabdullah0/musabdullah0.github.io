@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "hello world"
-date: 2019-04-30
+date: 2019-04-20
 ---
 
 This website is meant to be sort of a personal portfolio of all my projects and interests. From artificial
