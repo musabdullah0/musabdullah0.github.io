@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "hello world"
-date: 2019-04-20
+date: 2019-04-19
+img: "/assets/hello-world.jpeg"
+desc: "just a little intro"
 ---
 
 This website is meant to be sort of a personal portfolio of all my projects and interests. From artificial

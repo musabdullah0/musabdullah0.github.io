@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "game of life"
-date: 2019-04-19
+date: 2019-04-20
+img: "/assets/game-of-life.png"
+desc: "a simple game I built in JavaFX"
 ---
 
 *Conway's Game of Life* is a zero player game where you set an initial

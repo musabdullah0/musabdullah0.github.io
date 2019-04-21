@@ -36,8 +36,23 @@ footer {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 ul.posts li {
     list-style: none;
+    margin-bottom: 50px;
+}
+
+ul.posts li p {
+  margin: 5px 25px;
+  font-size: 0.6em;
+  font-weight: lighter;
+  color: #999;
+}
+
+ul.posts li img {
+  display: block;
+  margin-top: 10px;
+  max-width: 300px;
 }
