@@ -4,6 +4,7 @@ title: "digit recognition neural network"
 date: 2019-04-21
 img: "/assets/neural-network.jpeg"
 desc: "feedforward neural network implementing stochastic gradient descent"
+mathjax: true
 ---
 Image recognition is an ability of the brain taken for granted until it is
 further explored. The number of neurons working in tandem to achieve
@@ -53,14 +54,15 @@ $$ C = \frac{1}{2n} \sum_x || (y(x) - a^L(x)) ||^2 $$
 
 Now we're ready to begin:
 
-###Step 1: forward propagation
+## Step 1: forward propagation
 We start with random weights and biases over a uniform distribution from 0 to 1
 and feed the input vector all the way through. A notation we use to simplify stuff further is the superscript 'l' that tells us which layer we are in. We also introduce an intermediate variable z that stores the weighted input to a neuron prior to feeding it thru the sigmoid function. a is the output vector.
 
 $$ z^l \equiv w^l a^{l-1} + b^l $$
+
 $$ a^l = \sigma(z^l) $$
 
-###Step 2: find output error
+## Step 2: find output error
 
 We need a way of blaming neurons for the error based on how much they messed it
 up, so we introduce a new variable delta that tells you the error of a neuron.
@@ -78,19 +80,16 @@ rewriting the derivative with respect to the output activations...
 $$ \delta_j^L = \frac {\partial C}{\partial a_j^L}
   \frac {\partial a_j^L}{\partial z_j^L}$$
 
-since...
-
-$$ a_j^L = \sigma(z_j^L)$$
+since $ a_j^L = \sigma(z_j^L)$
 
 chain rule will give us...
 
 $$ \delta_j^L = \frac {\partial C}{\partial a_j^L}
   \sigma \prime (a_j^L)$$
 
-written more simply:
-$$ (a^L - y) \odot  \sigma \prime (z^L)$$
+written more simply: $ (a^L - y) \odot  \sigma \prime (z^L)$
 
-###Step 3: backpropagate error
+## Step 3: backpropagate error
 
 All we know so far is the error in the output neurons, so we could mess with the
 weights in the connections between the hidden neurons and the outputs and the
@@ -104,7 +103,7 @@ multiplying the transpose of the next weight matrix moved the error from that
 layer back to the current layer, and then chain rule again will put the sigma
 prime at the end.
 
-###Step 4: calculate gradient
+## Step 4: calculate gradient
 
 Now that we know who (which neurons) is responsible and by how much, we have to
 compute the gradient of the cost function. This is the essence of **gradient
@@ -113,10 +112,12 @@ direction proportionally to the gradient such that we reach a minimum. This is
 given by...
 
 $$ \frac{\partial C}{\partial w^l_{jk}} = a_k^{l-1} \delta^l_j $$
+
 and
+
 $$ \frac {\partial C}{\partial b_j^l} = \delta^l_j $$
 
-###Step 5: update weights and biases
+## Step 5: update weights and biases
 
 Since we have 60,000 training examples, calculating the gradient for every single
 one, then averaging them, and then updating the weights and biases will take ages.
@@ -125,6 +126,7 @@ calculate the gradient for them, update the weights and biases, and then move to
 the next batch. We update according to these rules:
 
 $$ w^l -> w^l - \frac{\eta}{m} \sum_x \delta^{x,l}(a^{x,l-1})^T $$
+
 $$ b^l -> b^l - \frac{\eta}{m} \sum_x \delta^{x,l} $$
 
 where eta is the **learning rate**, a constant that tells you by what
