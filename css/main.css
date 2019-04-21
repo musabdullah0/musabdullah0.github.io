@@ -46,7 +46,7 @@ ul.posts li {
 
 ul.posts li p {
   margin: 5px 25px;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: lighter;
   color: #999;
 }
@@ -54,5 +54,13 @@ ul.posts li p {
 ul.posts li img {
   display: block;
   margin-top: 10px;
-  max-width: 300px;
+  width: 400px;
+  object-fit: cover;
+  border: 2px solid black;
+}
+.image_container{
+  width: 400px;
+}
+.image_container:hover{
+  opacity: 0.7;
 }
