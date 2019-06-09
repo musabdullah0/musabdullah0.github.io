@@ -7,11 +7,13 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    font-size: 1.5em;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
@@ -20,11 +22,11 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 6em;
     font-family: 'Raleway', sans-serif;
 }
 p {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.4em;
     color: #333;
 }
@@ -35,7 +37,7 @@ footer {
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -45,8 +47,8 @@ ul.posts li {
 }
 
 ul.posts li p {
-  margin: 5px 25px;
-  font-size: 0.7em;
+  margin: 5px 40px;
+  font-size: 1em;
   font-weight: lighter;
   color: #999;
 }

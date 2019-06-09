@@ -21,9 +21,9 @@ the cells are set and the user presses **start**, he/she sits back and watches
 it grow, stabilize, die, oscillate, or whatever else can happen. There are two
 simple rules to advancing the game at each time-step:
 
-1. If a live cell has exactly 2 **or** 3 live neighbors, it stays **alive**
-2. If a dead cell has exactly 3 live neighbors, it becomes **alive**
+* If a live cell has exactly 2 **or** 3 live neighbors, it stays **alive**
+* If a dead cell has exactly 3 live neighbors, it becomes **alive**
 
 I decided to write this game in *Java* because it seemed like an interesting game
 and a simple introduction to GUI programming in JavaFX. The full code is on my
-[github](https://github.com/musabdullah0), but here is the gist of it.
+[github](https://github.com/musabdullah0).
